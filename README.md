@@ -14,11 +14,15 @@ A special thanks goes to Justin Richer and Amanda Anganes for their help and sup
 ## Install ##
  1. Install library using composer
 ```
-composer require jumbojett/openid-connect-php
+# Direct composer to use the github repo for this lib
+composer config repositories.repo-name vcs https://github.com/jumbojett/OpenID-Connect-PHP.git
+
+# Get the latest from github
+composer require jumbojett/openid-connect-php:dev-master
 ```
  2. Include composer autoloader
 ```php
-require '/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 ```
 
 ## Example 1: Basic Client ##
